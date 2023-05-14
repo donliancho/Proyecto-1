@@ -1,15 +1,23 @@
+:root {
+    --color:white;
+    --font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --background-color: #000000;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-family);
     text-decoration: none;
     list-style: none;
-    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/777/124/desktop-wallpaper-the-beatles-beatles.jpg);
-    color: white;
-
-    /* HEADER */
+    background-color: var(--background-color);
+    color: var(--color) ;
 }
+
+
+/* HEADER */
+
 
 header{
     height: 115px;
@@ -107,7 +115,7 @@ nav{
     margin-top: 34%;
     padding: 10px;
     transform: translate(-14%, -50%);
-    background-color: hsl(0, 3%, 21%);
+    background-color: rgba(0, 0, 0, .50);
 
 
 }
@@ -135,7 +143,7 @@ nav{
     padding: 4rem;
     margin: 0 auto;
  }
-.music > h1{
+.music > h2{
     text-align: center;
     font-size: 2rem;
 
@@ -175,7 +183,7 @@ nav{
 }
 /* SOCIAL NETWORK */
 
-.social h1{
+.social h2{
     font-size: 2rem;
     text-align: center;
 }
@@ -201,7 +209,7 @@ nav{
     font-size: 20px;
     border-radius: 5px;
     padding: 10px;
-    transform: translate(400%, 1500%);
+    transform: translate(340%, 1500%);
     z-index: 10;
 
 }
